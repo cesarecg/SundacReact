@@ -1,0 +1,45 @@
+{
+    "buttons": {
+        "button1": "Contáctanos Directamente",
+        "button2": "Visitanos en Instagram.",
+        "buttonheader": "Contáctanos"
+    },
+    "about":{
+        "abtitle": "¿Quiénes Somos?",
+        "abttext": "Proveedor de equipos médicos en Venezuela, Cubriendo las necesidades del sector salud venezolano y ayudando a nuestros clientes a conectar con sus pacientes y alcanzar sus metas.",
+        "missiontitle": "Mision",
+        "mision": "Cubrir las necesidades del sector salud venezolano, Ayudando a nuestros clientes a conectar con sus pacientes y alcanzar sus metas, garantizando beneficios a mediano y largo plazo, logrando el bienestar y mejorando la salud integral de sus equipos.",
+        "visiontitle": "Vision",
+        "vision": "Ser tu proveedor de confianza en el suministro, mantenimiento, venta y reparación de equipos médicos, garantizando seguridad y control de sus equipos con soluciones que ayuden al bienestar de la institución.",
+        "sendtitle":"Envios a todo el país",
+        "send": "Llegando a cada rincón de Venezuela, a pedido de las mejores clínicas a nivel nacional.",
+        "techtitle":"Técnicos Capacitados",
+        "tech": "Los mejores profesionales en el campo de mantenimiento e instalación de nuestros equipos.",
+        "distribtitle": "Principales Distribuidores",
+        "distrib": "Más de 10 centros médicos en el país cuentan con nuestro apoyo.",
+        "feedbacktitle": "Feedback Inmediato",
+        "feedback": "Somos reconocidos por nuestro tiempo bajo de respuesta, si tienes alguna duda sobre nuestros productos o servicios, ¡escríbenos!"
+     },
+     "products": {
+        "prtitle":"Productos y Servicios",
+        "prsubtitle": "Descubre las ventajas y los beneficios de trabajar con nosotros.",
+        "techserv": "Servicio Técnico",
+        "techservmain": "Profesionales especializados en servicio técnico para la atención de tus equipos, disponibles para ti las 24 horas.",
+        "techservsub": "LOS MEJORES EN VENEZUELA",
+        "equipment": "Equipos",
+        "equipmentmain": "Desde General Electric hasta Siemens, nuestros equipos representan la vanguardia de nuestro campo y al mejor precio del mercado. Contáctanos para más información.",
+        "equimentsub": "LO MÁS MODERNO",
+        "spareparts": "Repuestos y partes",
+        "sparepartsmain": "Tenemos gran cantidad de todo tipo de repuestos para todos tus equipos de imagenología.",
+        "sparepartssub": "ESPECIALIZADO EN IMÁGENES MÉDICAS"
+    },
+     "Testimonies":{
+        "testtitle": "Testimonios de Clientes",
+        "testsubtitle": "No solo tomes nuestra palabra, toma también la de nuestros clientes.",
+        "1test": "— Nuestros Aliados comerciales @Sundac_e son muestra de confianza y apoyo.",
+        "2test": "— Cuentan con precios competitivos, calidad humana y soporte técnico 24 horas al dia, siempre disponibles para nosotros.",
+        "3test": "— Excelente proveedores de servicios, que brindan atención inmediata y cuentan con personal capacitado."
+     }
+
+
+}

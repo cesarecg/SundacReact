@@ -1,0 +1,45 @@
+{
+    "buttons": {
+        "button1": "Contact us directly.",
+        "button2": "Visit us in Instagram.",
+        "buttonheader": "Contact Us"
+    },
+    "about":{
+        "abtitle": "About us",
+        "abttext": "Provider of medical equipment in Venezuela, covering the needs of the Venezuelan health sector and helping our clients to connect with their patients and achieve their goals.",
+        "missiontitle": "Mission",
+        "mision": "Cover the needs of the Venezuelan health sector, helping our clients to connect with their patients and achieve their goals, guaranteeing medium and long-term benefits, achieving well-being and improving the comprehensive health of their teams.",
+        "visiontitle": "Vision",
+        "vision": "To be your trusted provider in the supply, maintenance, sale and repair of medical equipment, guaranteeing safety and control of your equipment with solutions that help the well-being of the institution.",
+        "sendtitle":"Shipping all over the country",
+        "send": "Reaching every corner of Venezuela, at the request of the best clinics nationwide.",
+        "techtitle":"Trained Technicians",
+        "tech": "The best professionals in the field of maintenance and installation of our equipment.",
+        "distribtitle": "Main Distributors",
+        "distrib": "More than 10 medical centers in the country have our support.",
+        "feedbacktitle": "Immediate Feedback",
+        "feedback": "We are recognized for our low response time, if you have any questions about our products or services, write to us!"
+     },
+     "products": {
+        "prtitle":"Products and services",
+        "prsubtitle": "Discover the advantages and benefits of working with us.",
+        "techserv": "Technical service",
+        "techservmain": "Professionals specialized in technical service for the attention of your equipment, available to you 24 hours a day.",
+        "techservsub": "THE BEST IN VENEZUELA",
+        "equipment": "Equipment",
+        "equipmentmain": "From General Electric to Siemens, our equipment represents the cutting edge of our field and at the best price on the market. Contact us for more information.",
+        "equimentsub": "THE MOST MODERN",
+        "spareparts": "Spares and parts",
+        "sparepartsmain": "We have a large quantity of all kinds of spare parts for all your imaging equipment.",
+        "sparepartssub": "SPECIALIZED IN MEDICAL IMAGES"
+    },
+     "Testimonies":{
+        "testtitle": "Client Testimonials",
+        "testsubtitle": "Don't just take our word for it, take our customer's too.",
+        "1test": "— Our business partners @Sundac_e are a sign of trust and support.",
+        "2test": "— They have competitive prices, human quality and technical support 24 hours a day, always available to us.",
+        "3test":  "— Excellent service providers, who provide immediate care and have trained staff."
+     }
+
+
+}
