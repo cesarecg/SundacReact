@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import i18n from '../../i18n';
+import { Trans,useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -67,7 +69,9 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                 LOS MEJORES EN VENEZUELA
+                <Trans i18nKey="products.techservsub">
+                  LOS MEJORES EN VENEZUELA
+                </Trans>
                   </div>
                 <h3 className="mt-0 mb-12">
                 Servicio Técnico
