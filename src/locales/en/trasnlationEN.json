@@ -1,10 +1,7 @@
-{
-    "buttons": {
-        "button1": "Contact us directly.",
-        "button2": "Visit us in Instagram.",
-        "buttonheader": "Contact Us"
-    },
-    "about":{
+  {
+        "button1": "Contact us directly",
+        "button2": "Visit us in Instagram",
+        "buttonheader": "Contact Us",
         "abtitle": "About us",
         "abttext": "Provider of medical equipment in Venezuela, covering the needs of the Venezuelan health sector and helping our clients to connect with their patients and achieve their goals.",
         "missiontitle": "Mission",
@@ -18,9 +15,7 @@
         "distribtitle": "Main Distributors",
         "distrib": "More than 10 medical centers in the country have our support.",
         "feedbacktitle": "Immediate Feedback",
-        "feedback": "We are recognized for our low response time, if you have any questions about our products or services, write to us!"
-     },
-     "products": {
+        "feedback": "We are recognized for our low response time, if you have any questions about our products or services, write to us!",
         "prtitle":"Products and services",
         "prsubtitle": "Discover the advantages and benefits of working with us.",
         "techserv": "Technical service",
@@ -31,15 +26,13 @@
         "equimentsub": "THE MOST MODERN",
         "spareparts": "Spares and parts",
         "sparepartsmain": "We have a large quantity of all kinds of spare parts for all your imaging equipment.",
-        "sparepartssub": "SPECIALIZED IN MEDICAL IMAGES"
-    },
-     "Testimonies":{
+        "sparepartssub": "SPECIALIZED IN MEDICAL IMAGES",
         "testtitle": "Client Testimonials",
         "testsubtitle": "Don't just take our word for it, take our customer's too.",
         "1test": "— Our business partners @Sundac_e are a sign of trust and support.",
         "2test": "— They have competitive prices, human quality and technical support 24 hours a day, always available to us.",
         "3test":  "— Excellent service providers, who provide immediate care and have trained staff."
-     }
+     
 
 
 }

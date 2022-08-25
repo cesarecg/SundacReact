@@ -1,10 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import i18n from '../../i18n';
-import { Trans,useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -13,6 +11,8 @@ const propTypes = {
 const defaultProps = {
   ...SectionSplitProps.defaults
 }
+
+
 
 const FeaturesSplit = ({
   className,
@@ -28,6 +28,8 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
+  
+  const { t, } = useTranslation(); 
 
   const outerClasses = classNames(
     'features-split section',
@@ -51,10 +53,6 @@ const FeaturesSplit = ({
     alignTop && 'align-top'
   );
 
-  const sectionHeader = {
-    title: 'Productos y Servicios',
-    paragraph: 'Descubre las ventajas y los beneficios de trabajar con nosotros.'
-  };
 
   return (
     <section
@@ -63,22 +61,21 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+        <h2 className="center-content"> {t('prtitle')}  </h2>
+         <p className="center-content">{t('prsubtitle')}</p>
           <div className={splitClasses}>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                <Trans i18nKey="products.techservsub">
-                  LOS MEJORES EN VENEZUELA
-                </Trans>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">              
+                 {t('techservsub')}                
                   </div>
-                <h3 className="mt-0 mb-12">
-                Servicio Técnico
+                <h3 className="mt-0 mb-12">              
+                {t('techserv')}            
                   </h3>
                 <p className="m-0">
-                Profesionales especializados en servicio técnico para la atención de tus equipos, disponibles para ti las 24 horas.
-                  </p>
+                {t('techservmain')}     
+                </p>
               </div>
               <div className={
                 classNames(
@@ -97,13 +94,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                LO MÁS MODERNO
+                {t('equipmentsub')} 
                   </div>
                 <h3 className="mt-0 mb-12">
-                Equipos
+               {t('equipment')} 
                   </h3>
                 <p className="m-0">
-                Desde General Electric hasta Siemens, nuestros equipos representan la vanguardia de nuestro campo y al mejor precio del mercado. Contáctanos para más información.
+                {t('equipmentmain')} 
+               
                   </p>
               </div>
               <div className={
@@ -123,13 +121,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                ESPECIALIZADO EN IMÁGENES MÉDICAS
+                 {t('sparepartssub')} 
                   </div>
                 <h3 className="mt-0 mb-12">
-                Repuestos y partes
+                {t('spareparts')} 
                   </h3>
                 <p className="m-0">
-                Tenemos gran cantidad de todo tipo de repuestos para todos tus equipos de imagenología.
+                {t('sparepartsmain')} 
                   </p>
               </div>
               <div className={

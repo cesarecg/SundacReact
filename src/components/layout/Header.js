@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import { useTranslation } from 'react-i18next';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -28,9 +30,17 @@ const Header = ({
   bottomOuterDivider,
   bottomDivider,
   ...props
-}) => {
+}) => { 
 
- 
+  const { t, i18n } = useTranslation(); 
+  
+  const changeLanguage = () =>{
+    return()=>{
+      var selectBox = document.getElementById("selectBox");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      i18n.changeLanguage(selectedValue);
+    };
+  };
 
   const [isActive, setIsactive] = useState(false);
 
@@ -77,7 +87,6 @@ const Header = ({
   );
 
 
-
   return (
     <header
       {...props}
@@ -116,7 +125,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to ={{ pathname: "https://api.whatsapp.com/send?phone=584142847231&text=&source=&data=" }} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Contáctanos</Link>
+                      <Link to ={{ pathname: "https://api.whatsapp.com/send?phone=584142847231&text=&source=&data=" }} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>{t('buttonheader')}</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -127,9 +136,9 @@ const Header = ({
                         <Link to="./../../../app/login.php" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Login</Link>
                       </li>
                       <li>
-                        <select className="button button-sm">
-                        <option value="es">Español</option>
-                        <option value="en">English</option>
+                        <select id='selectBox' onChange={changeLanguage()} className="button button-sm">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
                         </select>
                       </li>
                     </ul>

@@ -1,10 +1,7 @@
 {
-    "buttons": {
         "button1": "Contáctanos Directamente",
-        "button2": "Visitanos en Instagram.",
-        "buttonheader": "Contáctanos"
-    },
-    "about":{
+        "button2": "Visitanos en Instagram",
+        "buttonheader": "Contáctanos", 
         "abtitle": "¿Quiénes Somos?",
         "abttext": "Proveedor de equipos médicos en Venezuela, Cubriendo las necesidades del sector salud venezolano y ayudando a nuestros clientes a conectar con sus pacientes y alcanzar sus metas.",
         "missiontitle": "Mision",
@@ -18,9 +15,7 @@
         "distribtitle": "Principales Distribuidores",
         "distrib": "Más de 10 centros médicos en el país cuentan con nuestro apoyo.",
         "feedbacktitle": "Feedback Inmediato",
-        "feedback": "Somos reconocidos por nuestro tiempo bajo de respuesta, si tienes alguna duda sobre nuestros productos o servicios, ¡escríbenos!"
-     },
-     "products": {
+        "feedback": "Somos reconocidos por nuestro tiempo bajo de respuesta, si tienes alguna duda sobre nuestros productos o servicios, ¡escríbenos!",
         "prtitle":"Productos y Servicios",
         "prsubtitle": "Descubre las ventajas y los beneficios de trabajar con nosotros.",
         "techserv": "Servicio Técnico",
@@ -28,12 +23,10 @@
         "techservsub": "LOS MEJORES EN VENEZUELA",
         "equipment": "Equipos",
         "equipmentmain": "Desde General Electric hasta Siemens, nuestros equipos representan la vanguardia de nuestro campo y al mejor precio del mercado. Contáctanos para más información.",
-        "equimentsub": "LO MÁS MODERNO",
+        "equipmentsub": "LO MÁS MODERNO",
         "spareparts": "Repuestos y partes",
         "sparepartsmain": "Tenemos gran cantidad de todo tipo de repuestos para todos tus equipos de imagenología.",
-        "sparepartssub": "ESPECIALIZADO EN IMÁGENES MÉDICAS"
-    },
-     "Testimonies":{
+        "sparepartssub": "ESPECIALIZADO EN IMÁGENES MÉDICAS",
         "testtitle": "Testimonios de Clientes",
         "testsubtitle": "No solo tomes nuestra palabra, toma también la de nuestros clientes.",
         "1test": "— Nuestros Aliados comerciales @Sundac_e son muestra de confianza y apoyo.",
@@ -42,4 +35,3 @@
      }
 
 
-}

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -23,6 +23,8 @@ const Testimonial = ({
   ...props
 }) => {
 
+  const { t,  } = useTranslation(); 
+
   const outerClasses = classNames(
     'testimonial section',
     topOuterDivider && 'has-top-divider',
@@ -43,11 +45,6 @@ const Testimonial = ({
     pushLeft && 'push-left'
   );
 
-  const sectionHeader = {
-    title: 'Testimonios de Clientes',
-    paragraph: 'No solo tomes nuestra palabra, toma también la de nuestros clientes.'
-  };
-
   return (
     <section
       {...props}
@@ -55,14 +52,15 @@ const Testimonial = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+         <h2 className="center-content"> {t('testtitle')}  </h2>
+         <p className="center-content">{t('testsubtitle')}</p>
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    —  Nuestros Aliados comerciales @Sundac_e son muestra de confianza y apoyo.
+                  {t('1test')} 
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
@@ -79,7 +77,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                  — Cuentan con precios competitivos, calidad humana y soporte técnico 24 horas al dia, siempre disponibles para nosotros.
+                  {t('2test')} 
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
@@ -96,7 +94,7 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                  — Excelente proveedores de servicios, que brindan atención inmediata y cuentan con personal capacitado.
+                  {t('3test')} 
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">

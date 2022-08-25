@@ -4,6 +4,7 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 
+
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
@@ -20,6 +21,7 @@ const trackPage = page => {
 
 const App = () => {
 
+ 
   const childRef = useRef();
   let location = useLocation();
 

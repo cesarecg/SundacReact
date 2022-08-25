@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
@@ -13,7 +13,9 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
+    <Suspense fallback={<div>Loading...</div>}>
     <App />
+    </Suspense>
   </Router>,
   document.getElementById('root')
 );

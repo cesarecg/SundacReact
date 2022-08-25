@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -22,6 +22,8 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
+
+  const { t, } = useTranslation(); 
 
   const outerClasses = classNames(
     'features-tiles section',
@@ -43,10 +45,7 @@ const FeaturesTiles = ({
     pushLeft && 'push-left'
   );
 
-  const sectionHeader = {
-    title: '¿Quiénes Somos?',
-    paragraph: 'Proveedor de equipos médicos en Venezuela, Cubriendo las necesidades del sector salud venezolano y ayudando a nuestros clientes a conectar con sus pacientes y alcanzar sus metas.'
-  };
+
 
   return (
     <section
@@ -55,7 +54,9 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+        <h2 className="center-content"> {t('abtitle')}</h2>
+         <p className="center-content">{t('abttext')}</p>
+
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-bottom">
@@ -71,10 +72,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Misión
+                  {t('missiontitle')}  
                     </h4>
                   <p className="m-0 text-sm">
-                  Cubrir las necesidades del sector salud venezolano, Ayudando a nuestros clientes a conectar con sus pacientes y alcanzar sus metas, garantizando beneficios a mediano y largo plazo, logrando el bienestar y mejorando la salud integral de sus equipos.
+                  {t('mision')} 
                     </p>
                 </div>
               </div>
@@ -93,10 +94,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Visión
+                  {t('visiontitle')}  
                     </h4>
                   <p className="m-0 text-sm">
-                  Ser tu proveedor de confianza en el suministro, mantenimiento, venta y reparación de equipos médicos, garantizando seguridad y control de sus equipos con soluciones que ayuden al bienestar de la institución.
+                  {t('vision')} 
                     </p>
                 </div>
               </div>
@@ -115,10 +116,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Envios a todo el país
+                  {t('sendtitle')}  
                     </h4>
                   <p className="m-0 text-sm">
-                  Llegando a cada rincón de Venezuela, a pedido de las mejores clínicas a nivel nacional.
+                  {t('send')}  
                     </p>
                 </div>
               </div>
@@ -137,10 +138,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Técnicos Capacitados
+                  {t('techtitle')}  
                     </h4>
                   <p className="m-0 text-sm">
-                  Los mejores profesionales en el campo de mantenimiento e instalación de nuestros equipos.
+                  {t('tech')}  
                     </p>
                 </div>
               </div>
@@ -159,10 +160,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Principales Distribuidores
+                  {t('distribtitle')}  
                     </h4>
                   <p className="m-0 text-sm">
-                  Más de 10 centros médicos en el país cuentan con nuestro apoyo.
+                  {t('distrib')}  
                     </p>
                 </div>
               </div>
@@ -181,10 +182,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                   Feedback Inmediato
+                  {t('feedbacktitle')}   
                     </h4>
                   <p className="m-0 text-sm">
-                  Somos reconocidos por nuestro tiempo bajo de respuesta, si tienes alguna duda sobre nuestros productos o servicios, ¡escríbenos!
+                  {t('feedback')}   
                     </p>
                 </div>
               </div>
